@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="top-container-btn">
+            <a href="/" class="back-btn"><h3>< Back</h3></a>
+            <a href="/logout" class="logout-btn"><button>Logout</button></a>
+        </div>
+        
+        <div class="qr-scanner-container">
+            
+            <h3>Align the QR code into the square</h3>
+            
+            <img src="/assets/images/qr-scanner.jpeg" alt="QR scanner image" class="qr-scanner-img">
+
+            <br>
+
+            <form action="/check-in" method="post">
+                <h3>Temperature: <input type="text" name="temperature" required></h3>
+                <button class="after-scanning">After Scanning</button>
+            </form>
+        </div>
+
+    </body>
+</html>

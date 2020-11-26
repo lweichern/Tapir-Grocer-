@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="line-back-1"></div>
+        <div class="line-back-2"></div>
+        <div class="line-back-3"></div>
+
+        <img src="/assets/images/postCo.png" alt="PostCo logo" class="logo">
+
+        <form class="content" method="post" action="/register">
+            <h1 class="main-title">Register</h1>
+
+            <h3 id="full-name">Full Name:<input type="text" name="f_name" required></h3>
+            
+            <h3 id="icNum">I/C Number:<input type="text" name="icNo" required></h3>
+
+            <h3 id="role-column">Role:
+                <select name="role" id="role" onchange="locationAppear(this)">
+                    <option value="Visitor">Visitor</option>
+                    <option value="Store Owner">Store Owner</option>
+                </select>
+            </h3>
+
+            <h3 id="location" style="display: none;">Location:<input type="text" name="location"></h3>
+
+            <button type="submit" class="login-btn">Register</button>
+            
+            <h5>Already have an account?<a href="/">Sign In</a></h5>
+        </form>
+        
+
+    </body>
+
+    <script>
+        // let loc = document.getElementById('location');
+
+        function locationAppear(val){
+            let role = val.value;
+            if(role == "Store Owner"){
+                document.getElementById('location').style.display = "block";
+            }else{
+                document.getElementById('location').style.display = "none";
+            }
+        }
+
+    </script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+
+        <div class="top-container">
+            <a href="/logout"><button class="logout">Logout</button></a>
+        </div>
+
+        <img src="/assets/images/postCo.png" alt="PostCo logo" class="logo">
+        
+        <div class="content">
+            <h2>Name: <%- name %></h2>
+            <h2>Role: <%- role %></h2>
+            <h2>Location: <%- location %></h2>
+
+            <button class="qr-code" onclick="generateQR()">Generate QR Code</button>
+            
+            <img id='barcode' style="display: none;" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="HELLO" width="200" height="200" />
+
+            <h3 id="qrDescription" style="display: none;">Visitors are required to scan the QR code above upon entry</h3>
+
+        </div>
+    </body>
+
+    <script>
+
+        function generateQR(){
+            var qrcodeImg = document.getElementById('barcode');
+            var qrDescription = document.getElementById('qrDescription');
+
+            qrcodeImg.style.display = "block";
+            qrcodeImg.style.marginLeft = "auto";
+            qrcodeImg.style.marginRight = "auto"; 
+
+            qrDescription.style.display = "block";
+
+        }
+
+    </script>
+
+</html>

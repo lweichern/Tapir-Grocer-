@@ -1,0 +1,151 @@
+body{
+    padding: 10px;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, gray, rgb(54, 54, 54));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    text-align: center;
+}
+
+#full-name, #icNum, #role-column, #location{
+    margin-top: 40px;
+}
+
+input[type = text]{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 10px;
+    background: transparent;
+}
+
+input[type=text]:focus{
+    border: 1px solid rgb(250, 185, 64);
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+.top-container{
+    text-align: right;
+}
+
+.top-container-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout-btn > button{
+    margin-top: 15px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logout{
+    margin-top: 15px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-btn{
+    margin-top: 40px;
+    padding: 12px;
+    background: transparent;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(250, 185, 64);
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+}
+
+.login-btn:hover{
+    opacity: 0.7;
+}
+
+a{
+    color: white;
+}
+
+.qr-code, .qr-scanner-btn, .after-scanning{
+    margin-top: 25px;
+    padding: 12px;
+    background: transparent;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(250, 185, 64);
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+}
+
+.qr-code:hover, .qr-scanner-btn:hover, .after-scanning:hover{
+    opacity: 0.7;
+}
+
+#barcode{
+    margin-top: 30px;
+}
+
+#qrDescription{
+    color: white;
+}
+
+#role{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 10px;
+    background: transparent;
+    color: white;
+}
+
+option{
+    background: lightgray;
+}
+
+.qr-scanner-container{
+    text-align: center;
+    height: 400px;
+}
+
+.qr-scanner-img{
+    max-width: 300px;
+    max-height: 100%;
+}
+
+.visitor-details-top-container{
+    text-align: center;
+}
+
+.visitor-details-container{
+    text-align: center;
+}
+

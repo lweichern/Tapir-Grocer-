@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+
+        <div class="top-container">
+            <a href="/logout"><button class="logout">Logout</button></a>
+        </div>
+
+        <img src="/assets/images/postCo.png" alt="PostCo logo" class="logo">
+        
+        <div class="content">
+            <h2>Name: <%- name %></h2>
+            <h2>Role: <%- role %></h2>
+
+            <a href="/qr-scanner"><button class="qr-scanner-btn">Check-In</button></a>
+            
+            <h3 style="color: white;">Click button above to scan the QR code upon entry</h3>
+
+        </div>
+    </body>
+</html>

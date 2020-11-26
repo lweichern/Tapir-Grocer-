@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="top-container-btn">
+            <a href="/" class="back-btn"><h3>< Back to Main Page</h3></a>
+            <a href="/logout" class="logout-btn"><button>Logout</button></a>
+        </div>
+        <hr>
+        <div class="visitor-details-top-container">
+            <h1>Visitor Details</h1>
+        </div>
+        <hr>
+        <div class="visitor-details-container">
+            <h2>Name: <%= name %></h2>
+            <h2>I/C No: <%= icNo %></h2>
+            <h2>Role: <%= role %></h2>
+            <h2>Location: Tapir Grocer</h2>
+            <h2>Temperature: <%= temperature %>°C</h2>
+            <h2>Check-in Date: <%= date %></h2>
+            <h2>Check-in Time: <%= time %></h2>
+        </div>
+    </body>
+</html>
